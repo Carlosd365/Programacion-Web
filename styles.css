@@ -1,7 +1,35 @@
-html, body {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
     height: 100%;
-    background-color: #000;
-    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left {
+    max-width: 400px;
+}
+
+.left h1 {
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.left p {
+    font-size: 1.5rem;
 }
