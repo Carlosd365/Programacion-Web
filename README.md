@@ -27,5 +27,5 @@ Aquí se muestran los secretos configurados en el repositorio de GitHub para la 
 
 La siguiente URL permite acceder al contenido distribuido mediante **Amazon CloudFront**:
 
-🔗 **[https://https://d1h5yaqkxqz6oc.cloudfront.net](https://https://d1h5yaqkxqz6oc.cloudfront.net)**
+🔗 **[https://d1h5yaqkxqz6oc.cloudfront.net](https://d1h5yaqkxqz6oc.cloudfront.net)**
 
