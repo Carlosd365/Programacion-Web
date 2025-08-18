@@ -2,12 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Poke-Gallery</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <header class="header">
+      <h1>Poke-Gallery</h1>
+    </header>
+
+    <main class="container">
+      <p id="status" class="status">Loading…</p>
+
+      <section
+        id="grid"
+        class="grid"
+        aria-live="polite"
+      ></section>
+    </main>
+
+    <footer class="footer">
+      Data from
+      <a
+        href="https://pokeapi.co"
+        target="_blank"
+        rel="noreferrer"
+      >PokeAPI</a>
+    </footer>
+
+    <script
+      type="module"
+      src="/src/main.js"
+    ></script>
   </body>
 </html>
