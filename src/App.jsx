@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
 import FilterButtons from './components/FilterButtons';
+import './App.css';
 
 function App() {
   const [tasks, setTasks] = useState(() => {
@@ -48,13 +49,10 @@ function App() {
   }, [tasks]);
 
   return (
-    <div>
+    <div className="app-container">
       <h1>Task Manager</h1>
-
       <TaskForm onAddTask={addTask} />
-
       <FilterButtons currentFilter={filter} onChangeFilter={setFilter} />
-
       <TaskList
         tasks={getFilteredTasks()}
         onToggle={toggleTask}
