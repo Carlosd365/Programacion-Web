@@ -1,6 +1,8 @@
+import '../styles/FilterButtons.css';
+
 function FilterButtons({ currentFilter, onChangeFilter }) {
     return (
-        <div>
+        <div className="filter-buttons">
         <button
             onClick={() => onChangeFilter('all')}
             disabled={currentFilter === 'all'}

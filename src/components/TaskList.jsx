@@ -1,8 +1,9 @@
 import TaskItem from './TaskItem';
+import '../styles/TaskList.css';
 
 function TaskList({ tasks, onToggle, onDelete }) {
     return (
-        <ul>
+        <ul className="task-list">
         {tasks.map((task) => (
             <TaskItem
             key={task.id}
