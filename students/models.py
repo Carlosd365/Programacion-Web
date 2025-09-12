@@ -8,3 +8,12 @@ class Student(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.email})"
+
+
+class Course(models.Model):
+    title = models.CharField(max_length=150)
+    description = models.TextField(blank=True)
+    students = models.ManyToManyField(Student, related_name='courses', blank=True)
+
+    def __str__(self):
+        return self.title
