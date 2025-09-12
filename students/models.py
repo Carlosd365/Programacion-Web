@@ -28,3 +28,16 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Grade(models.Model):
+    student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='grades')
+    course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='grades')
+    score = models.DecimalField(max_digits=5, decimal_places=2)  # e.g. 95.50
+    date = models.DateField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('student', 'course', 'date')
+
+    def __str__(self):
+        return f"{self.student.name} - {self.course.title}: {self.score}"
